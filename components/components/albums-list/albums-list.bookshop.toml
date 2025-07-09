@@ -1,0 +1,9 @@
+[component]
+structures = [ "content_blocks" ]
+label = "Albums List"
+description = "Lists all of the site's albums"
+icon = "wysiwyg"
+tags = ["Collections"]
+
+[props]
+show_albums = true

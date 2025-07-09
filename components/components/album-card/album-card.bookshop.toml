@@ -1,0 +1,12 @@
+[component]
+structures = []
+label = "Album Card"
+description = "Album card used for album lists"
+icon = "wysiwyg"
+tags = []
+
+[props.album]
+title = "Hello World"
+subtitle = "Lorem Ipsum"
+image = "https://placekitten.com/800/400"
+url = "/"

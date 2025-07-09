@@ -1,0 +1,13 @@
+{% if include.show_posts %}
+<div class="container animate">
+  <div class="row" data-pagebreak="6">
+    {% for post in site.posts %}
+      {% if post.categories contains 'blog' %}
+        {% bookshop blog-card post=post %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% bookshop_include pagination %}
+{% endif %}
