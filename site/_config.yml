@@ -1,6 +1,6 @@
-title: Originalnicodr
+title: Skyshield Labs
 
-url: "https://originalnicodr.github.io" # the base hostname & protocol for your site
+url: "https://skyshield.github.io"
 plugins:
   - jekyll-bookshop
   - cloudcannon-jekyll-bookshop
@@ -37,7 +37,7 @@ collections:
     permalink: /:categories/:slug
   albums:
     output: true
-    permalink: /virtual-photography/:slug
+    permalink: /service/:slug
 
 cloudcannon:
   collections:

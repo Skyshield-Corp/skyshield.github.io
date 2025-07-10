@@ -10,14 +10,14 @@
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
-  {% if page.url == "/" or page.url == "/blog/" or page.url == "/virtual-photography/" or page.url == "/virtual-photography-new/" or page.url == "/about/" %}
+  {% if page.url == "/" or page.url == "/blog/" or page.url == "/service/" or page.url == "/virtual-photography-new/" or page.url == "/about/" %}
     {% assign social-media-card-image = site.data.general_settings.social_media_share_image | absolute_url %}
   {% elsif page.url == "/el-corgi-pretencioso/" %}
     {% assign social-media-card-image = "/images/pcorgi.jpg" | absolute_url %}
   {% elsif page.url contains "/blog/" or page.url contains "/el-corgi-pretencioso/" %}
     {% assign social-media-card-image = page.image | absolute_url %}
-  {% elsif page.url contains "/virtual-photography/" %}
-    {% assign social-media-card-image = site.data.virtual-photography[page.slug][page.card-image].thumbnail-link %}
+  {% elsif page.url contains "/service/" %}
+    {% assign social-media-card-image = site.data.service[page.slug][page.card-image].thumbnail-link %}
   {% else %}
     {% assign social-media-card-image = site.data.general_settings.social_media_share_image | absolute_url %}
   {% endif %}

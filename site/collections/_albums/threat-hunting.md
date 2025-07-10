@@ -1,8 +1,6 @@
 ---
-date: 2023-03-28
-title: Far Cry 3
+title: Theat Hunting & Intelligence
 description:
-developer: Ubisoft Montreal
 card-image: 4
 banner-image: 12
 banner-offset: 65

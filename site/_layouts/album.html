@@ -10,9 +10,9 @@ layout: default
  </style>
 
 {% if page.banner-image %}
-  {% assign banner-pic = site.data.virtual-photography[page.slug][page.banner-image] %}
+  {% assign banner-pic = site.data.service[page.slug][page.banner-image] %}
 {% else %}
-  {% assign banner-pic = site.data.virtual-photography[page.slug][page.card-image] %}
+  {% assign banner-pic = site.data.service[page.slug][page.card-image] %}
 {% endif %}
 
 {% assign ar = banner-pic.aspect-ratio | plus: 0 %}
@@ -45,7 +45,7 @@ layout: default
   <script type="text/javascript" src="../../js/album/pig.js"></script>
   <script type="text/javascript">
     var imageData = [
-    {% for image in site.data.virtual-photography[page.slug] %}
+    {% for image in site.data.service[page.slug] %}
         {"thumbnail":"{{ image.thumbnail-link }}", "image1080":"{{ image.image1080-link }}", "imageFull":"{{ image.imageFull-link }}", "aspectRatio":{{ image.aspect-ratio }}},
     {% endfor %}
     ];
